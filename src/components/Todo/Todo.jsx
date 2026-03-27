@@ -38,7 +38,7 @@ const Todo = () =>{
   <ul className="text-center text-white space-y-2 max-h-[200px] overflow-y-auto">
     {itens.map((item, index) => (
       <li key={index}>
-        {item} - <button onClick={() => removerTarefa(index)}>X</button>
+        {item} - <button className="px-2 rounded bg-blue-500 text-white" onClick={() => removerTarefa(index)}>X</button>
       </li>
     ))}
   </ul>
